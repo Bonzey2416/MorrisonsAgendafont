@@ -1,0 +1,17 @@
+@font-face {
+  font-family: MorrisonsAgenda;
+  font-weight: normal
+  src: url(MorrisonsAgendaLight.woff);
+}
+
+@font-face {
+  font-family: MorrisonsAgenda;
+  font-weight: 600;
+  src: url(MorrisonsAgendaMedium.woff);
+}
+
+@font-face {
+  font-family: MorrisonsAgenda;
+  font-weight: bold;
+  src: url(MorrisonsAgendaSemibold.woff);
+}
