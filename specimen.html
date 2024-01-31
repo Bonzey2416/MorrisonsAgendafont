@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Specimen - MorrisonsAgenda font family</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.4.13/dist/cdn/beer.min.css" rel="stylesheet" />
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.4.13/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.0/dist/cdn/material-dynamic-colors.min.js"></script>
@@ -50,7 +50,7 @@
 </head>
 <body>
 
-  <nav class="bottom">
+  <nav class="s bottom">
     <a href="index.html">
       <i>widgets</i>
       <span>Overview</span>
@@ -64,6 +64,21 @@
       <span>Install</span>
     </a>
   </nav>
+  <nav class="m l left">
+    <a href="index.html">
+      <i>widgets</i>
+      <span>Overview</span>
+    </a>
+    <a href="specimen.html" class="active">
+      <i>text_fields</i>
+      <span>Specimen</span>
+    </a>
+    <a href="install.html">
+      <i>download</i>
+      <span>Install</span>
+    </a>
+  </nav>
+  <main class="responsive">
     <header>
         <nav>
           <button class="circle transparent">
@@ -84,7 +99,6 @@
         <h3 class="small-padding">MorrisonsAgenda font</h5>
             <div class="small-space"></div>
       </header>
-
       <div class="page active padding">
         <h5>Specimen</h5>
         <h6>Type tester</h5>
@@ -95,6 +109,7 @@
                 <span></span>
                 <div class="tooltip"></div>
             </label>
+            <div class="max"></div>
             <p>24px</p>
         </nav>
         <div class="field textarea border extra" style="height: calc(90px + 15vw);">
@@ -109,7 +124,6 @@
             <textarea style="font-size: 24px; font-weight: 700;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
             <span class="helper">Font weight 700 (bold)</span>
         </div>
-        <div class="large-space"></div>
-        <div class="large-space"></div>
     </div>
+  </main>
 </body>
