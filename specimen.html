@@ -6,6 +6,7 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.4.13/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.0/dist/cdn/material-dynamic-colors.min.js"></script>
     <link rel="stylesheet" href="https://bonzey2416.github.io/MorrisonsAgendafont/fonts.css">
+    <script type="text/javascript" src="script.js" defer></script>
     <style>
         :root {
             --primary:#006e1c;
@@ -105,24 +106,24 @@
         <nav>
             <p>Font size</p>
             <label class="slider large">
-                <input type="range" value="24" min="6" max="144">
+                <input id="fontSize" type="range" value="24" min="6" max="144">
                 <span></span>
                 <div class="tooltip"></div>
             </label>
             <div class="max"></div>
-            <p>24px</p>
+            <p><span id="fontSizePreview"></span>px</p>
         </nav>
         <div class="grid">
             <div class="field textarea border extra s12 m12 l4" style="height: calc(90px + 15vw);">
-                <textarea style="font-size: 24px; font-weight: 400;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
+                <textarea id="textPreview1" style="font-size: 24px; font-weight: 400;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
                 <span class="helper">Font weight 400 (normal)</span>
             </div>
             <div class="field textarea border extra s12 m12 l4" style="height: calc(90px + 15vw);">
-                <textarea style="font-size: 24px; font-weight: 600;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
+                <textarea id="textPreview2" style="font-size: 24px; font-weight: 600;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
                 <span class="helper">Font weight 600 (semibold)</span>
             </div>
             <div class="field textarea border extra s12 m12 l4" style="height: calc(90px + 15vw);">
-                <textarea style="font-size: 24px; font-weight: 700;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
+                <textarea id="textPreview3" style="font-size: 24px; font-weight: 700;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
                 <span class="helper">Font weight 700 (bold)</span>
             </div>
         </div>
