@@ -15,3 +15,12 @@ slider.oninput = function () {
   preview4.style.fontSize = this.value + "px";
 
 };
+
+function changeFontSize(number) {
+  output.innerHTML = number;
+  slider.value = number;
+  preview1.style.fontSize = number + "px";
+  preview2.style.fontSize = number + "px";
+  preview3.style.fontSize = number + "px";
+  preview4.style.fontSize = number + "px";
+}
