@@ -112,13 +112,12 @@
         <h5>Specimen</h5>
         <h6>Type tester</h5>
         <nav>
-            <p>Font size</p>
+            <p class="m l">Font size</p>
             <label class="slider">
                 <input id="fontSize" type="range" value="40" min="8" max="300">
                 <span></span>
                 <div class="tooltip"></div>
             </label>
-            <div class="max"></div>
             <button class="transparent">
                 <span><span id="fontSizePreview"></span>px</span>
                 <i>arrow_drop_down</i>
@@ -137,22 +136,34 @@
                     <a onclick="changeFontSize(280)">280px</a>
                 </menu>
             </button>
+            <button class="transparent">
+                <span><i>settings</i></span>
+                <i>arrow_drop_down</i>
+                <menu class="left no-wrap">
+                    <a>
+                        <label class="checkbox">
+                            <input type="checkbox" id="fontKerning" onclick="toggleKerning()">
+                            <span>Kerning</span>
+                        </label>
+                    </a>
+                </menu>
+            </button>
         </nav>
         <div class="grid">
             <div class="field textarea border extra s12 m12 l3" style="height: calc(90px + 15vw);">
-                <textarea id="textPreview1" style="font-size: 40px; font-weight: 400;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
+                <textarea id="textPreview1" style="font-size: 40px; font-weight: 400; font-kerning: none;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
                 <span class="helper">Font weight 400 (normal)</span>
             </div>
             <div class="field textarea border extra s12 m12 l3" style="height: calc(90px + 15vw);">
-                <textarea id="textPreview2" style="font-size: 40px; font-weight: 600;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
+                <textarea id="textPreview2" style="font-size: 40px; font-weight: 600; font-kerning: none;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
                 <span class="helper">Font weight 600 (semibold)</span>
             </div>
             <div class="field textarea border extra s12 m12 l3" style="height: calc(90px + 15vw);">
-                <textarea id="textPreview3" style="font-size: 40px; font-weight: 700;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
+                <textarea id="textPreview3" style="font-size: 40px; font-weight: 700; font-kerning: none;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
                 <span class="helper">Font weight 700 (bold)</span>
             </div>
             <div class="field textarea border extra s12 m12 l3" style="height: calc(90px + 15vw);">
-                <textarea id="textPreview4" style="font-size: 40px; font-weight: 800;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
+                <textarea id="textPreview4" style="font-size: 40px; font-weight: 800; font-kerning: none;">The quick brown fox jumps over the lazy dog. 1234567890</textarea>
                 <span class="helper">Font weight 800 (extrabold)</span>
           </div>
         </div>
