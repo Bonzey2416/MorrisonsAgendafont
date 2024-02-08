@@ -4,6 +4,7 @@ var preview1 = document.getElementById("textPreview1");
 var preview2 = document.getElementById("textPreview2");
 var preview3 = document.getElementById("textPreview3");
 var preview4 = document.getElementById("textPreview4");
+var kerning = document.getElementById("fontKerning");
 
 output.innerHTML = slider.value;
 
@@ -23,4 +24,18 @@ function changeFontSize(number) {
   preview2.style.fontSize = number + "px";
   preview3.style.fontSize = number + "px";
   preview4.style.fontSize = number + "px";
+}
+
+function toggleKerning() {
+  if (kerning.checked == true){
+    preview1.style.fontKerning = "normal";
+    preview2.style.fontKerning = "normal";
+    preview3.style.fontKerning = "normal";
+    preview4.style.fontKerning = "normal";
+    } else {
+    preview1.style.fontKerning = "none";
+    preview2.style.fontKerning = "none";
+    preview3.style.fontKerning = "none";
+    preview4.style.fontKerning = "none";
+    }
 }
